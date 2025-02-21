@@ -120,9 +120,14 @@ header {
     border-radius: 0.5rem;
 }
 
+.header__desktop-nav {
+    width: 100%;
+}
+
 .header__desktop-nav ul {
-    display: flex; 
-    gap: 16rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     list-style: none;
     padding: 1rem;
 }
@@ -140,18 +145,6 @@ header {
     color: gold;
 }
 
-@media only screen and (max-width: 1025px) {
-    .header__desktop-nav ul {
-        gap: 8rem;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .header__desktop-nav ul {
-        gap: 4rem;
-    }
-}
-
 @media only screen and (max-width: 426px) {
     .header__logo {
         font-size: 2rem;
@@ -159,7 +152,6 @@ header {
     }
 
     .header__desktop-nav ul {
-        gap: .9rem;
         padding: 1rem 0;
     }
 
@@ -169,10 +161,6 @@ header {
 }
 
 @media only screen and (max-width: 376px) { 
-    .header__desktop-nav ul {
-        gap: 1rem;
-    }
-
     .header__desktop-nav a {
         font-size: 1rem; 
     }
@@ -180,7 +168,6 @@ header {
 
 @media only screen and (max-width: 321px) { 
     .header__desktop-nav ul {
-        gap: .9rem;
         padding: .75rem 0;
     }
 
