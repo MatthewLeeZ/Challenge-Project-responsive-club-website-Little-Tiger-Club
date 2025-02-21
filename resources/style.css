@@ -656,6 +656,7 @@ header {
 
 .contact__container {
     display: flex;
+    width: 100%;
 }
 
 .contact__epigraph {
@@ -664,17 +665,24 @@ header {
     color: goldenrod;
 }
 
+.contact__gallery {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
 .contact__gallery figure {
     display: flex;
 }
 
 .contact__container img {
-    width: auto;
-    height: 67vh;
+    width: 100%;
+    height: auto;
 }
 
 .contact__content {
     padding: 2rem;
+    width: 60%;
 }
 
 .contact__text {
@@ -692,13 +700,15 @@ header {
         justify-content: center;
         align-items: center;
         padding-top: 1rem;
+        flex-direction: column;
     }
-}
 
-@media only screen and (max-width: 426px) {
-    .contact__container img {
-        width: 90vw;
-        height: auto;
+    .contact__gallery {
+        width: 75%;
+    }
+
+    .contact__content {
+        width: 100%;
     }
 }
 
@@ -845,7 +855,7 @@ header {
     background-color: black;
     color: goldenrod;
     padding: 1rem;
-    width: 37.5rem;
+    width: 100%;
     border: 3px solid goldenrod;
 }
 
@@ -870,19 +880,10 @@ header {
     }
 }
 
-@media only screen and (max-width: 426px) {
-    .credit__unsplash {
-        width: 22.5rem;
-    }
-}
 
 @media only screen and (max-width: 376px) { 
     .credit__illu {
         padding: 0;
-    }
-
-    .credit__unsplash {
-        width: 20rem;
     }
 }
 
@@ -891,10 +892,6 @@ header {
     .credit__gallery img {
         width: 90vw;
         height: auto;
-    }
-
-    .credit__unsplash {
-        width: 15rem;
     }
 }
 
